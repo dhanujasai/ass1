@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    char s[10];
+    int h;
+    printf("enter string");
+    get(s);
+    for(h=0;s[h]!=’\0’;h++)
+    {
+        if(s[h]>=65 && s[h]<=90)
+s[h]=s[h]+32;
+        if(s[h]>=97&&s[h]<=122)
+        s[h]=s[h]-32;
+    }
+    s[h]='\0';
+    printf("%s",s);
+    return 0;
+}
